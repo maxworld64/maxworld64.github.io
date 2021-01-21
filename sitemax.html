@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--GlideJs-->
+    <link rel="stylesheet" href="glideJs/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:900&amp;subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    
+    <title>Les 304 et la famille "Boulette"</title>
+
+</head>
+
+<body>
+    <header>
+        <h1> Bienvenue ! sur mon premier site web ...</h1>
+    </header>
+    <main>
+        <h3>Ceci est un site fan des 7 saisons du film Harry Potter et <br>
+            des joueurs de basket-ball comme Michael Jordan ou Kobe Bryant</h3>
+        <!--GlideJs-->
+        <div class="example__frame">
+            <div id="intro" class="slider glide">
+                <div class="slider__track glide__track" data-glide-el="track">
+                    <ul class="slider__slides glide__slides">
+                        <li class="slider__frame glide__slide"><img src="glideJs/img/Jordan.jpg" alt="Jordan" /></li>
+                        <li class="slider__frame glide__slide"><img src="glideJs/img/Harrypotteretlacoupedefeux.jpg"
+                                alt="Harry" /></li>
+                        <li class="slider__frame glide__slide"><img src="glideJs/img/HogwartsExpress.jpg" alt="Jordan" /></li>
+                        <li class="slider__frame glide__slide"><img src="glideJs/img/Hp1.jpg" alt="Harrypotter" /></li>
+                        <li class="slider__frame glide__slide"><img src="glideJs/img/Michaelsaute.jpg" alt="Jordan" /></li>
+                        <li class="slider__frame glide__slide"><img src="glideJs/img/HarryetsonOncle.png" alt="Potter" /></li>
+                        <li class="slider__frame glide__slide"><img src="glideJs/img/Michaeltirelalangue.webp" alt="Michael" />
+                        </li>
+                        <li class="slider__frame glide__slide"><img src="glideJs/img/Harry7.jpg" alt="Harrynum7" /></li>
+                        <li class="slider__frame glide__slide"><img src="glideJs/img/Michaellebg.jpg" alt="Jordan" /></li>
+                        <li class="slider__frame glide__slide"><img src="glideJs/img/Harrysaigne.jpg" alt="Harryensang" /></li>
+                    </ul>
+                </div>
+                <div data-glide-el="controls">
+                    <button class="slider__arrow slider__arrow--prev glide__arrow glide__arrow--prev"
+                        data-glide-dir="<">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M0 12l10.975 11 2.848-2.828-6.176-6.176H24v-3.992H7.646l6.176-6.176L10.975 1 0 12z" />
+                        </svg>
+                    </button>
+                    <button class="slider__arrow slider__arrow--next glide__arrow glide__arrow--next"
+                        data-glide-dir=">">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]">
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=0"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=1"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=2"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=3"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=4"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=5"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=6"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=7"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=8"></button>
+                    <button class="slider__bullet glide__bullet" data-glide-dir="=9"></button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script>
+            var glide = new Glide('#intro', {
+                type: 'carousel',
+                perView: 4,
+                focusAt: 'center',
+                breakpoints: {
+                    800: {
+                        perView: 2
+                    },
+                    480: {
+                        perView: 1
+                    }
+                }
+            })
+
+            glide.mount()
+        </script>
+        <!--Fin GlideJs-->
+        <p class="p_main">Chaque personne ayant la magie en lui peut rester et n'a pas besoin d'utiliser ni "Porte
+            au loin" ni les railles du train menant au 9 3/4...</p>
+        <p class="p_main">Quand aux basketteurs aguerries, ils peuvent entrer en milieu de terrain pour aller voir nos célébrités du ballon
+            orange !</p>
+        <section>
+            <h3 class="h3_hp"><i class="fas fa-broom"></i> Nous voici maintenant dans le monde tant attendu de la magie
+                à Poudlard <i class="fas fa-hat-wizard"></i></h3>
+            <img class="left" src="img/hp.jpg" />
+            <p class="p_hp"> La saga "Harry Potter" est sortie le 26 Juin 1997 avec le tome "Harry Potter à l'école des
+                sorciers" et elle s'est achevée le 21 Juillet 2007 avec le tome "Harry Potter et les reliques de la mort". <br>
+                Entre temps, la sortie des films "Harry Potter" s'est accumulée et a amené un nombre de fan plus nombreux grâce à la magie des acteurs.</p>
+            <ul>
+                <li><i class="fas fa-school"></i>  "Harry Potter à l'école des sorciers" (5 décembre 2001)</li>
+                <li><i class="fas fa-bed"></i>  "Harry Potter et la chambre des secrets (4 décembre 2002)</li>
+                <li><i class="fas fa-user-lock"></i> "Harry Potter et le prisonnier d'Azkaban" (2 Juin 2004)</li>
+                <li><i class="fab fa-gripfire"></i> "Harry Potter et la coupe de feux" (30 Novembre 2005)</li>
+                <li><i class="fab fa-phoenix-framework"></i> "Harry Potter et l'Ordre du Phénix" (11 juillet 2007) </li>
+                <li><i class="fas fa-crown"></i> "Harry Potter et le prince de sang mêlé" (15 juillet 2009) </li>
+                <li><i class="fas fa-book-dead"></i> "Harry Potter et les reliques de la morts partie 1" ( 24 novembre 2010) </li>
+                <li><i class="fas fa-skull-crossbones"></i> "Harry Potter et les Reliques de la mort partie 2" (13 juillet 2011) </li>
+            </ul>
+            <a href="harrytroppeur.html">Pour en savoir plus cliquez ici !</a>
+            <h3 class="h3_bs"><i class="fas fa-basketball-ball"></i> Le monde du basket-ball <i
+                    class="fas fa-basketball-ball"></i></h3>
+            <img class="right" src="img/Jordan.jpg" />
+            <h4> Et enfin faites un tonnerre d'applaudissement pour Michael Jordan !!! </h4>
+            <p>Nous voilà maintenant dans un monde où le fameux ballon orange est "Roi" !</p>
+            <p>Pour ceux qui le savent, un de nos chers joueurs de ballon de basket est malheureusement décédé, <br>
+                mais nous n'allons pas baisser les bras ! Nous allons avancer dans ce monde où le panier ne fait qu'un avec le "shooter" !</p>
+            <p>Jordan est une célébrité du basket-ball, né le 17 février 1963 à Brooklyn, il fera ses preuves ... </p>
+            <a href="Jordan.html">Si tu veux mieux connaître nos joueurs, c'est par ici ! </a>
+        </section>
+    </main>
+    <footer>
+        <small>Crée par Max SC © 2020</small>
+    </footer>
+</body>
+
+</html>
